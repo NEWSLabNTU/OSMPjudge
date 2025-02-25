@@ -40,10 +40,8 @@ b12345678#_王小明_XXX_XXX_XXX.zip
 ...
 ```
 
-### Clone `judge.py` under `mp0/`
-```bash
-# maybe just copy and paste the code?
-```
+### Clone `judge.py` under `mp0/` and prepare private testcase
+Clone `judge.py` under `mp0/` and prepare private testcase
 
 ### Enter docker
 Note that we mount `mp0/` in the container here, not `xv6/`.
