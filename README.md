@@ -28,7 +28,7 @@ cd mp0
 ```
 
 ### Prepare students' submission files
-Download all submission from NTU COOL. Unzip it to `./mp0/submissions`.
+Download all submission from NTU COOL. Unzip it to `mp0/submissions`.
 ```bash
 mkdir submissions
 unzip [downloaded_file.zip] -d submissions 
