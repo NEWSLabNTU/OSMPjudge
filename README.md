@@ -14,7 +14,7 @@ A judge to grade all submission and collect results.
     +-- Makefile
     ```
 
-   If the top directory is not named after student_id(both NTU or NTNU accepted), or file not included in a directory, a hint to deduct 10 points will appear in the student's `result.csv`.
+   If the top directory is not named after student_id(both NTU or NTNU accepted), or file not included in a directory, a hint to deduct 10 points will appear in the student's `result.txt`.
 4. If any error occurs during grading, the judge continue to the next students and warn you in the terminal. You may have to grade them manually.
 
 ## Usage
@@ -41,7 +41,7 @@ b12345678#_王小明_XXX_XXX_XXX.zip
 ```
 
 ### Clone `judge.py` under `mp0/` and prepare private testcase
-Clone `judge.py` under `mp0/` and prepare private testcase
+Clone `judge.py` under `mp0/` and prepare private testcase.
 
 ### Enter docker
 Note that we mount `mp0/` in the container here, not `xv6/`.
@@ -59,4 +59,4 @@ It starts with logging look like:
 Grading r12345678#_王小明 (WANG, HSIAO-MING)_xxxxxx_xxxxxxx_mp0_r12345678.zip
 Score for r12345678#_王小明 (WANG, HSIAO-MING)_xxxxxx_xxxxxxx_mp0_r12345678.zip: Score: 90/100
 ```
-And you can view all results and all error in `results/summary.csv` and `results/error.csv`.
+And you can view all results and all error in `results/summary.txt` and `results/error.txt`.
