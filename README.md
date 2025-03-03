@@ -46,7 +46,7 @@ Clone `judge.py` under `mp0/` and prepare private testcase
 ### Enter docker
 Note that we mount `mp0/` in the container here, not `xv6/`.
 ```bash
-docker run --rm -it -v "$(shell pwd)":/home/os_mp0/mp0 -w /home/os_mp0/mp0 ntuos/mp0
+docker run --rm -it -v "$(pwd)":/home/os_mp0/mp0 -w /home/os_mp0/mp0 ntuos/mp0
 ```
 
 ### Start the judge
