@@ -54,13 +54,14 @@ def grade_individual(zip_file):
         # run grading
         os.chdir(XV6_PATH)
         process = subprocess.Popen("make grade", shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-        stdout, _ = process.communicate()
+        stdout, stderr = process.communicate()
         subprocess.Popen("make clean > /dev/null", shell=True).wait()  # wait to ensure it finishes
         os.chdir(CURRENT_PATH)
 
         # store results
         with open(os.path.join(result_path, "result.txt"), "w") as f:
             f.write(stdout)
+            f.write(stderr)
 
         global RESULTS_BUF
         score_pattern = r"Score: (\d{1,3})/100"
